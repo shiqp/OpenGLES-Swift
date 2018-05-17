@@ -4,4 +4,7 @@
    <FileRef
       location = "group:OpenGLES01/OpenGLES01.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:OpenGLES02/OpenGLES02.xcodeproj">
+   </FileRef>
 </Workspace>
