@@ -25,13 +25,13 @@ struct SceneVertex {
 
 var vertices = [
     SceneVertex(positionCoords: GLKVector3Make(-0.5, -0.5, 0.0),
-                textureCoords: GLKVector2Make(0.0, 0.0)),
-    SceneVertex(positionCoords: GLKVector3Make(0.5, -0.5, 0.0),
-                textureCoords: GLKVector2Make(1.0, 0.0)),
-    SceneVertex(positionCoords: GLKVector3Make(0.5, 0.5, 0.0),
                 textureCoords: GLKVector2Make(0.0, 1.0)),
+    SceneVertex(positionCoords: GLKVector3Make(0.5, -0.5, 0.0),
+                textureCoords: GLKVector2Make(1.0, 1.0)),
+    SceneVertex(positionCoords: GLKVector3Make(0.5, 0.5, 0.0),
+                textureCoords: GLKVector2Make(1.0, 0.0)),
     SceneVertex(positionCoords: GLKVector3Make(-0.5, 0.5, 0.0),
-                textureCoords: GLKVector2Make(1.0, 1.0))
+                textureCoords: GLKVector2Make(0.0, 0.0))
 ]
 
 class ViewController: GLKViewController {
@@ -60,9 +60,6 @@ class ViewController: GLKViewController {
         } catch {
 
         }
-
-        //        self.baseEffect.useConstantColor = GLboolean(GL_TRUE)
-        //        self.baseEffect.constantColor = GLKVector4Make(1, 0, 1, 1)
 
         self.baseEffect.texture2d0.name = textureInfo.name
         self.baseEffect.texture2d0.target = GLKTextureTarget(rawValue: textureInfo.target)!
