@@ -14,6 +14,9 @@
 		DA3D163320B41A32006BF9F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3D163120B41A32006BF9F2 /* LaunchScreen.storyboard */; };
 		DA3D163E20B41A32006BF9F2 /* OpenGLES03Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3D163D20B41A32006BF9F2 /* OpenGLES03Tests.swift */; };
 		DA3D164920B41A32006BF9F2 /* OpenGLES03UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3D164820B41A32006BF9F2 /* OpenGLES03UITests.swift */; };
+		DA77EF5F20B421C00073F596 /* AGLKVertexAttribArrayBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77EF5D20B421C00073F596 /* AGLKVertexAttribArrayBuffer.swift */; };
+		DA77EF6020B421C00073F596 /* AGLKContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77EF5E20B421C00073F596 /* AGLKContext.swift */; };
+		DA77EF6320B421E30073F596 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA77EF6220B421E30073F596 /* GLKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		DA3D164420B41A32006BF9F2 /* OpenGLES03UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGLES03UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3D164820B41A32006BF9F2 /* OpenGLES03UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenGLES03UITests.swift; sourceTree = "<group>"; };
 		DA3D164A20B41A32006BF9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA77EF5D20B421C00073F596 /* AGLKVertexAttribArrayBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGLKVertexAttribArrayBuffer.swift; sourceTree = "<group>"; };
+		DA77EF5E20B421C00073F596 /* AGLKContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGLKContext.swift; sourceTree = "<group>"; };
+		DA77EF6220B421E30073F596 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA77EF6320B421E30073F596 /* GLKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 				DA3D163C20B41A32006BF9F2 /* OpenGLES03Tests */,
 				DA3D164720B41A32006BF9F2 /* OpenGLES03UITests */,
 				DA3D162620B41A31006BF9F2 /* Products */,
+				DA77EF6120B421E20073F596 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +105,7 @@
 		DA3D162720B41A31006BF9F2 /* OpenGLES03 */ = {
 			isa = PBXGroup;
 			children = (
+				DA77EF5C20B421A90073F596 /* AGLKit */,
 				DA3D162820B41A31006BF9F2 /* AppDelegate.swift */,
 				DA3D162A20B41A31006BF9F2 /* ViewController.swift */,
 				DA3D162C20B41A31006BF9F2 /* Main.storyboard */,
@@ -123,6 +132,23 @@
 				DA3D164A20B41A32006BF9F2 /* Info.plist */,
 			);
 			path = OpenGLES03UITests;
+			sourceTree = "<group>";
+		};
+		DA77EF5C20B421A90073F596 /* AGLKit */ = {
+			isa = PBXGroup;
+			children = (
+				DA77EF5E20B421C00073F596 /* AGLKContext.swift */,
+				DA77EF5D20B421C00073F596 /* AGLKVertexAttribArrayBuffer.swift */,
+			);
+			name = AGLKit;
+			sourceTree = "<group>";
+		};
+		DA77EF6120B421E20073F596 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA77EF6220B421E30073F596 /* GLKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +282,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA77EF6020B421C00073F596 /* AGLKContext.swift in Sources */,
+				DA77EF5F20B421C00073F596 /* AGLKVertexAttribArrayBuffer.swift in Sources */,
 				DA3D162B20B41A31006BF9F2 /* ViewController.swift in Sources */,
 				DA3D162920B41A31006BF9F2 /* AppDelegate.swift in Sources */,
 			);
