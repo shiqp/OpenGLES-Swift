@@ -78,16 +78,16 @@ class ViewController: GLKViewController {
         self.vertexBuffer.prepareToDraw(withVertexAttrib: .texCoord0,
                                         coordsCount: 2,
                                         /*
-             GLfloat // <-- structure start
-             GLfloat // <-- position
-             GLfloat
-             GLfloat
-             GLfloat // <-- texture
-             GLfloat
-             ptr = sizeof(GLfloat) * 4œ
-             */
-            attribOffset: MemoryLayout<GLfloat>.size * 4,
-            enableVertexAttribArray: true)
+                                         GLfloat // <-- structure start
+                                         GLfloat // <-- position
+                                         GLfloat
+                                         GLfloat
+                                         GLfloat // <-- texture
+                                         GLfloat
+                                         ptr = sizeof(GLfloat) * 4œ
+                                         */
+                                        attribOffset: MemoryLayout<GLfloat>.size * 4,
+                                        enableVertexAttribArray: true)
 
 
         self.vertexBuffer.drawArray(withMode: GLenum(GL_TRIANGLE_FAN), startVertexIndex: 0, vertexCount: GLsizei(vertices.count))
